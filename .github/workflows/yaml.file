@@ -1,0 +1,25 @@
+name: Run Tests on Push
+
+on: [push, pull_request]  # Runs when code is pushed or a pull request is made
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Runs on an Ubuntu environment
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # Clones your repo
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'  # Specify the Python version
+
+      - name: Install Dependencies
+        run: |
+          python -m venv venv  # Create virtual environment
+          source venv/bin/activate
+          pip install numpy pandas matplotlib scikit-learn opencv-python wandb  # Install necessary packages
+
+      - name: Run Test Script
+        run: python test_script.py  # This script should verify dataset and image loading
