@@ -44,3 +44,14 @@ b) Results and key metrics were tracked and logged using WandB. Metrics such as 
 3. Classification: The template image was classified into Cluster X.
 
 4. Experiment Tracking: All results, including metrics and images, were successfully logged to WandB for future reference and analysis.
+
+## Dashboard Screenshots
+
+![1](https://github.com/user-attachments/assets/263c9603-3c73-4486-9f05-19fc6a361b5c)
+
+![2](https://github.com/user-attachments/assets/032a91ae-353a-4a2f-ad31-68da6b4f85d9)
+
+![3](https://github.com/user-attachments/assets/825314e6-7690-464f-b10a-a20f52dc7efb)
+
+
+
