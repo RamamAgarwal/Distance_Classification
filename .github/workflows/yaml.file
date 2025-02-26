@@ -23,3 +23,8 @@ jobs:
 
       - name: Run Test Script
         run: python test_script.py  # This script should verify dataset and image loading
+
+      - name: Run Experiment
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+        run: python distance_classification.py
